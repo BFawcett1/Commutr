@@ -1,0 +1,57 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+.home {
+  background-color: #F4DECB;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #94618E;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__home {
+  color: #F4DECB;
+  margin-left: 5%;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: verdana;
+}
+
+.navbar__trip {
+  color: #F4DECB;
+  margin-right: 5%;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: verdana;
+}
+
+.form {
+  background-color: #F4DECB;
+}
+
+.form__label {
+  font-family: verdana;
+  color: #49274A;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.form__box {
+  margin-bottom: 16px;
+}
+/*# sourceMappingURL=main.css.map */

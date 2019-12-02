@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: $grape;
+  align-items: center;
+  justify-content: space-between;
+
+  &__home {
+    color: $sand;
+    margin-left: 5%;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: verdana;
+  }
+
+  &__trip {
+    color: $sand;
+    margin-right: 5%;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: verdana;
+  }
+}

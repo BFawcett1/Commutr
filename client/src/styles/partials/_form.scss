@@ -1,0 +1,14 @@
+.form {
+  background-color: $sand;
+
+  &__label {
+    font-family: verdana;
+    color: $eggplant;
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &__box{
+      margin-bottom: 16px;
+  }
+}
