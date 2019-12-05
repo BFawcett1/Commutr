@@ -1,16 +1,18 @@
-const mongoose  = require('mongoose');
+const mongoose = require("mongoose");
 
 const PostSchema = mongoose.Schema({
-    title: {
-        type: String,
-        required: true;
-    }
-    description: String,
-    date:{
-        type: Date,
-        default: Date.now
-    } 
+  payment: {
+    type: String,
+    required: true
+  },
+  date: {
+    type: Date,
+    default: Date.now
+  },
+  zones:{
+      type: Number,
+      required: true
+  }
 });
 
-module.exports = mongoose.model('Posts', PostSchema);
-
+module.exports = mongoose.model("Posts", PostSchema);

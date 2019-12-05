@@ -1,0 +1,25 @@
+.landing{
+    background-color: $sand;
+
+    &__header{
+    font-family: verdana;
+    color: $eggplant;
+    margin-bottom: 8px;
+    font-size: 32px;
+    line-height: 42px;
+    }
+
+    &__paragraph{
+    font-family: verdana;
+    color: $eggplant;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px; 
+    }
+
+    &__top-container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+}

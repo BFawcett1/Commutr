@@ -1,16 +1,15 @@
-import "./config/Keys";
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const db = require("./config/Keys").mongoUri;
+const cors = require("cors");
 
-app.use(bodyParser.json());
+app.use(cors());
+app.use(express.json());
 
-const postsRoute = require('./routes/posts')
+const postsRoute = require("./routes/posts");
 
-app.use("/posts", () => {
-  console.log("This is middleware running");
-});
+app.use("/posts", postsRoute);
 
 app.get("/", (req, res) => {
   res.send("We are on home");
@@ -22,7 +21,7 @@ mongoose
     useNewUrlParser: true,
     useCreateIndex: true
   })
-  .then(() => console.log("connected"))
+  .then(() => console.log("connected to mongo"))
   .catch(er => console.log(er));
 
 app.listen(5000);

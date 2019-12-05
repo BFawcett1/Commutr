@@ -6,11 +6,15 @@ const Navbar = () => {
     <div className="navbar">
       <Link to="/">
         {" "}
-      <h1 className="navbar__home">COMMUTR</h1>
+        <h1 className="navbar__home">COMMUTR</h1>
       </Link>
       <Link to="/form">
         {" "}
         <h1 className="navbar__trip">Trip Tracking</h1>
+      </Link>
+      <Link to="/landing">
+        {" "}
+        <h1 className="navbar__graphs">Graphs</h1>
       </Link>
     </div>
   );

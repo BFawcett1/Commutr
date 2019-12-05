@@ -16,15 +16,40 @@ router.post('/', async (req, res) => {
         title: req.body.title,
         description: req.body.description
     });
-  post.save()
-  .exec()
+  post.save().then(post => res.json(post));
 
-  try{
-  const savedPost = await post.save();
-  res.json(savedPost);
-  }catch(err){
-      res.json({message: err});
-  }
-};
+//   try{
+//   const savedPost = await post.save();
+//   res.json(savedPost);
+//   }catch(err){
+//       res.json({message: err});
+//   }
+})
+router.get('/:postId', async (req, res) => {
+   try{
+    const post = await Post.findById(req.params.postId);
+    res.json(post);
+    } catch (err){
+        res.json({ message: err});
+    }
+});
+
+router.delete('/:postId', async (req, res) => {
+    try{
+    const removedPost = await Post.remove({_id: req.params.postId});
+    res.json(removedPost);
+}catch(err){
+    res.json({ message: err});
+}
+});
+
+router.patch('/:postId', (req, res) => {
+    try{
+        const updatedPost = Post.updateOne({ _id: req.params.postId }, 
+            { $set: {title: req.body.title }})
+    }catch (err){
+        res.json({message: err});
+    }
+});
 
 module.exports = router;

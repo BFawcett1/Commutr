@@ -54,4 +54,29 @@
 .form__box {
   margin-bottom: 16px;
 }
+
+.landing {
+  background-color: #F4DECB;
+}
+
+.landing__header {
+  font-family: verdana;
+  color: #49274A;
+  margin-bottom: 8px;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.landing__paragraph {
+  font-family: verdana;
+  color: #49274A;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.landing__top-container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 /*# sourceMappingURL=main.css.map */
