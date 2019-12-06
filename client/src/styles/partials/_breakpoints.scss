@@ -1,3 +1,33 @@
+@mixin header{
+  font-size: 24px;
+  line-height: 32px;
+  font-family: verdana;
+}
+
+@mixin paragraph{
+  font-size: 13px;
+  line-height: 18px;
+  font-family: verdana;
+}
+
+@mixin tab-header{
+  font-size: 36px;
+  line-height: 44px;
+  font-family: verdana;
+}
+
+@mixin tab-subheader{
+  font-size: 24px;
+  line-height: 32px;
+  font-family: verdana;
+}
+
+@mixin tab-paragraph{
+  font-size: 14px;
+  line-height: 22px;
+  font-family: verdana;
+}
+
 /* media query for mobile */
 @mixin small {
   @media only screen and (max-width: 767px) {

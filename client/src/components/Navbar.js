@@ -5,6 +5,7 @@ import Bus from "../assets/bus.jpg";
 const Navbar = () => {
   return (
     <div className="navbar">
+      <div className="navbar__left-container">
       <div className="navbar__logo-container">
       <Link to="/landing">
         {" "}
@@ -13,6 +14,7 @@ const Navbar = () => {
       </div>
       <div className="navbar__img-container">
       <img className="navbar__img" src={Bus} />
+      </div>
       </div>
       <div className="navbar__right-container">
       <Link to="/form">

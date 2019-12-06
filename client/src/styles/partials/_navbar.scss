@@ -1,5 +1,6 @@
 .navbar {
   display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100px;
   background-color: $grape;
@@ -8,10 +9,7 @@
 
   &__home {
     color: $sand;
-    margin-left: 5%;
-    font-size: 18px;
-    line-height: 24px;
-    font-family: verdana;
+    @include header;
   }
 
   &__trip {
@@ -31,29 +29,105 @@
     font-family: verdana;
   }
 
-  &__img{
+  &__img {
+    display: none;
     width: 100px;
     height: 60px;
   }
 
-  &__logo-container{
-    width: 33%;
+  &__logo-container {
     display: flex;
     margin-left: 5%;
     justify-content: flex-start;
   }
 
-  &__img-container{
-    width: 33%;
+  &__img-container {
     display: flex;
     justify-content: center;
   }
 
-  &__right-container{
-    width: 33%;
+  &__right-container {
+    width: 50%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-right: 3%;
     justify-content: space-around;
+    height: 100%;
+  }
+  &__left-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+@include medium {
+  .navbar {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: $grape;
+    align-items: center;
+    justify-content: space-between;
+
+    &__home {
+      color: $sand;
+      margin-left: 5%;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: verdana;
+    }
+
+    &__trip {
+      color: $sand;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: verdana;
+      margin-right: 5%;
+      width: 100%;
+    }
+
+    &__graphs {
+      color: $sand;
+      margin-right: 5%;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: verdana;
+    }
+
+    &__img {
+      display: flex;
+      width: 100px;
+      height: 60px;
+    }
+
+    &__logo-container {
+      width: 33%;
+      display: flex;
+      margin-left: 5%;
+      justify-content: flex-start;
+    }
+
+    &__img-container {
+      width: 33%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__right-container {
+      width: 33%;
+      display: flex;
+      flex-direction: row;
+      margin-right: 3%;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &__left-container{
+      align-items: center;
+      flex-direction: row;
+      width: 60%;
+      justify-content: space-between;
+    }
   }
 }

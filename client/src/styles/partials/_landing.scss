@@ -1,7 +1,8 @@
 .landing{
-    background-color: $sand;
+    background-color: $shell;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 
     &__header{
     margin-top: 32px;
@@ -50,6 +51,8 @@
         margin-bottom: 8px;
         font-size: 14px;
         line-height: 20px; 
+        text-align: left;
+        padding: 5px;
     }
 }
 @include medium{
