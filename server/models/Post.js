@@ -6,11 +6,11 @@ const PostSchema = mongoose.Schema({
     required: true
   },
   date: {
-    type: Date,
+    type: String,
     default: Date.now
   },
   zones:{
-      type: Number,
+      type: String,
       required: true
   }
 });

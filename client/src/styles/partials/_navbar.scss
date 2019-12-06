@@ -16,9 +16,44 @@
 
   &__trip {
     color: $sand;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: verdana;
+    margin-right: 5%;
+    width: 100%;
+  }
+
+  &__graphs {
+    color: $sand;
     margin-right: 5%;
     font-size: 18px;
     line-height: 24px;
     font-family: verdana;
+  }
+
+  &__img{
+    width: 100px;
+    height: 60px;
+  }
+
+  &__logo-container{
+    width: 33%;
+    display: flex;
+    margin-left: 5%;
+    justify-content: flex-start;
+  }
+
+  &__img-container{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__right-container{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 3%;
+    justify-content: space-around;
   }
 }

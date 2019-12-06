@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
+@import "./partials/breakpoints";
 @import "./partials/colors";
 @import "./partials/home";
 @import "./partials/navbar";

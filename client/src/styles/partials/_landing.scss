@@ -1,7 +1,10 @@
 .landing{
     background-color: $sand;
+    display: flex;
+    flex-direction: column;
 
     &__header{
+    margin-top: 32px;
     font-family: verdana;
     color: $eggplant;
     margin-bottom: 8px;
@@ -20,6 +23,49 @@
     &__top-container{
         margin-left: 5%;
         margin-right: 5%;
+        margin-bottom: 32px;
     }
-    
+
+    &__mid-container{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 32px;
+    }
+
+    &__bottom-container{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 8px;
+        margin-bottom: 32px;
+    }
+
+    &__tablet-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__table-row{
+        font-family: verdana;
+        color: $eggplant;
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 20px; 
+    }
+}
+@include medium{
+        .landing{
+            flex-direction: row;
+        }
+    }
+
+@include large{
+    .landing{
+    &__tablet-container{
+        flex-direction: row;
+        width: 66.7%;
+    }
+    &__bottom-container{
+        width: 33.3%;
+    }
+}
 }

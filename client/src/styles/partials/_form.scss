@@ -1,5 +1,8 @@
 .form {
   background-color: $sand;
+  display: flex;
+  justify-content: center;
+
 
   &__label {
     font-family: verdana;
@@ -8,7 +11,25 @@
     font-size: 18px;
     line-height: 24px;
   }
+
   &__box{
       margin-bottom: 16px;
+  }
+
+  &__container{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__box{
+
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__label{
+    margin-right: 12px;
   }
 }
