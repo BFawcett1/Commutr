@@ -7,13 +7,15 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar__left-container">
       <div className="navbar__logo-container">
-      <Link to="/landing">
+      <Link to="/">
         {" "}
         <h1 className="navbar__home">COMMUTR</h1>
       </Link>
       </div>
       <div className="navbar__img-container">
+      <Link to="/">
       <img className="navbar__img" src={Bus} />
+      </Link>
       </div>
       </div>
       <div className="navbar__right-container">
@@ -21,7 +23,7 @@ const Navbar = () => {
         {" "}
         <h1 className="navbar__trip">Trip Tracking</h1>
       </Link>
-      <Link to="/">
+      <Link to="/graphs">
         {" "}
         <h1 className="navbar__graphs">Graphs</h1>
       </Link>

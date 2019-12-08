@@ -1,0 +1,18 @@
+.graphs{
+    background-color: white;
+
+    &__header{
+        @include header;
+        color: $dark-blue;
+        margin-top: 16px;
+    }
+}
+
+@include medium{
+    .graphs{
+        &__header{
+            @include tab-header;
+            margin-top: 32px;
+        }
+    }
+}

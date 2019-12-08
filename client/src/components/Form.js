@@ -17,7 +17,7 @@ export default function Form() {
   if (posts.length >= 0) {
     newPost = posts.map(function(post) {
       return (
-        <div>
+        <div className="form__post-container">
           <h2>{post.payment}</h2>
           <h2>{post.date}</h2>
           <h2>{post.zones}</h2>
@@ -66,7 +66,7 @@ export default function Form() {
         </div>
       </form>
       <div className="form__tracking-container">
-        <h1>Trips</h1>
+        <h1 className="form__tracking-header">Trips</h1>
         {newPost}</div>
     </div>
   );

@@ -1,5 +1,5 @@
 .form {
-  background-color: $sand;
+  background-color: $bright-green;
   justify-content: center;
   height: 100vh;
   display: flex;
@@ -8,9 +8,9 @@
   justify-content: flex-start;
 
   &__label {
-    font-family: verdana;
-    color: $eggplant;
+    color: $dark-blue;
     margin-bottom: 8px;
+    font-family: verdana;
     font-size: 18px;
     line-height: 24px;
   }
@@ -20,13 +20,12 @@
   }
 
   &__container{
-    margin-top: 12px;
+    margin-top: 32px;
     display: flex;
     flex-direction: column;
   }
 
   &__box{
-
     justify-content: flex-end;
     display: flex;
     flex-direction: row;
@@ -34,5 +33,29 @@
 
   &__label{
     margin-right: 12px;
+  }
+
+  &__tracking-container{
+    margin-top: 32px;
+  }
+  &__post-container{
+    border-top-style: solid;
+    border-color: $dark-blue;
+    width: 90%;
+  }
+  &__tracking-header{
+    @include header;
+    color: $dark-blue;
+  }
+}
+
+@include medium{
+  .form{
+    &__label{
+      @include tab-subheader;
+    }
+    &__tracking-header{
+      @include tab-header;
+    }
   }
 }

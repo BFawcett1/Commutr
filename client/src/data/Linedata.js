@@ -5,8 +5,8 @@ export default {
     datasets: [
         {
             label: ['Adult Single Fare, 1 Zone'],
-            backgroundColor: '#49274A',
-            borderColor: '#F4DECB',
+            backgroundColor: '#05386B',
+            borderColor: '#379683',
             data: [
                  0,
                  9,
@@ -27,8 +27,8 @@ export default {
         },
         {
             label: ['Adult Monthly Pass, 1 Zone'],
-            backgroundColor: '#F8EEE7',
-            borderColor: '#94618E',
+            backgroundColor: '#5CDB95',
+            borderColor: 'black',
             data: [
                 98,
                 98,
@@ -49,8 +49,8 @@ export default {
         },
         {
             label: ['Adult Stored Value, 1 Zone'],
-            backgroundColor: 'white',
-            borderColor: 'black',
+            backgroundColor: '#8EE4AF',
+            borderColor: 'white',
             data: [
                 6,
                 13.2,

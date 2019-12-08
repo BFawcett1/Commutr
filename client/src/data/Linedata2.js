@@ -1,34 +1,34 @@
 export default {
     labels: [
-        0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42
+        0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56
     ],
     datasets: [
         {
             label: ['Adult Single Fare, 2 Zone'],
-            backgroundColor: '#49274A',
-            borderColor: '#F4DECB',
+            backgroundColor: '#05386B',
+            borderColor: '#379683',
             data: [
                 0,
-                12.75,
-                25.5,
-                38.25,
+                17,
+                34,
                 51,
-                63.75,
-                76.5,
-                88.75,
-                101.25,
-                113.5,
-                125.75,
-                138,
-                150.25,
-                162.5,
-                175
+                68,
+                85,
+                102,
+                119,
+                136,
+                153,
+                170,
+                187,
+                204,
+                221,
+                238
             ]
         },
         {
             label: ['Adult Monthly Pass, 2 Zone'],
-            backgroundColor: '#F8EEE7',
-            borderColor: '#94618E',
+            backgroundColor: '#5CDB95',
+            borderColor: 'black',
             data: [
                 131,
                 131,
@@ -49,24 +49,24 @@ export default {
         },
         {
             label: ['Adult Stored Value, 2 Zone'],
-            backgroundColor: 'white',
-            borderColor: 'black',
+            backgroundColor: '#8EE4AF',
+            borderColor: 'white',
             data: [
                 6,
-                13.2,
-                20.4,
-                27.6,
-                34.8,
-                42,
-                49.2,
-                56.4,
-                63.6,
-                70.8,
-                78,
-                85.2,
-                92.4,
-                99.6,
-                106.8
+                23,
+                40,
+                57,
+                74,
+                91,
+                108,
+                125,
+                142,
+                159,
+                176,
+                193,
+                210,
+                227,
+                244
             ]
         }
     ]

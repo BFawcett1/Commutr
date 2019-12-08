@@ -1,0 +1,20 @@
+.footer{
+    height: 100px;
+    display: flex;
+    background-color: $dark-green;
+    justify-content: center;
+
+    &__info-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__info{
+        @include paragraph;
+        color: $light-green;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}

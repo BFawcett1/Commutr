@@ -4,9 +4,9 @@ export default {
     ],
     datasets: [
         {
-            label: ['Concession Single Fare or Stored Value, 1 Zone'],
-            backgroundColor: '#49274A',
-            borderColor: '#F4DECB',
+            label: ['Concession Single Fare, 1 Zone'],
+            backgroundColor: '#05386B',
+            borderColor: '#379683',
             data: [
                 0,
                 5.85,
@@ -26,9 +26,31 @@ export default {
             ]
         },
         {
+            label: ['Concession Stored Value, 1 Zone'],
+            backgroundColor: '#8EE4AF',
+            borderColor: 'white',
+            data: [
+                6,
+                11.85,
+                17.7,
+                23.55,
+                29.4,
+                35.25,
+                41.1,
+                47.95,
+                53.8,
+                59.65,
+                66.5,
+                72.35,
+                78.2,
+                84.05,
+                90.9
+            ]
+        },
+        {
             label: ['Concession Monthly Pass, Any Zones'],
-            backgroundColor: '#F8EEE7',
-            borderColor: '#94618E',
+            backgroundColor: '#5CDB95',
+            borderColor: 'black',
             data: [
                 56,
                 56,
