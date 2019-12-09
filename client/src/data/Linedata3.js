@@ -7,6 +7,7 @@ export default {
             label: ['Concession Single Fare, 1 Zone'],
             backgroundColor: '#05386B',
             borderColor: '#379683',
+            pointHoverBackgroundColor: "white",
             data: [
                 0,
                 5.85,
@@ -29,6 +30,7 @@ export default {
             label: ['Concession Stored Value, 1 Zone'],
             backgroundColor: '#8EE4AF',
             borderColor: 'white',
+            pointHoverBackgroundColor: "white",
             data: [
                 6,
                 11.85,
@@ -51,6 +53,7 @@ export default {
             label: ['Concession Monthly Pass, Any Zones'],
             backgroundColor: '#5CDB95',
             borderColor: 'black',
+            pointHoverBackgroundColor: "white",
             data: [
                 56,
                 56,

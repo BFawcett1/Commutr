@@ -7,6 +7,7 @@ export default {
             label: ['Adult Single Fare, 3 Zone'],
             backgroundColor: '#05386B',
             borderColor: '#379683',
+            pointHoverBackgroundColor: "white",
             data: [
                 0,
                 17.25,
@@ -29,6 +30,7 @@ export default {
             label: ['Adult Monthly Pass, 3 Zone'],
             backgroundColor: '#5CDB95',
             borderColor: 'black',
+            pointHoverBackgroundColor: "white",
             data: [
                 177,
                 177,
@@ -51,6 +53,7 @@ export default {
             label: ['Adult Stored Value, 3 Zone'],
             backgroundColor: '#8EE4AF',
             borderColor: 'white',
+            pointHoverBackgroundColor: "white",
             data: [
                 6,
                 19.5,

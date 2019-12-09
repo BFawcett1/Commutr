@@ -18,15 +18,14 @@ export default function Form() {
     newPost = posts.map(function(post) {
       return (
         <div className="form__post-container">
-          <h2>{post.payment}</h2>
-          <h2>{post.date}</h2>
-          <h2>{post.zones}</h2>
+          <h2 className="form__post-text">Payment Type: {post.payment}</h2>
+          <h2 className="form__post-text">Date: {post.date}</h2>
+          <h2 className="form__post-text">Zones: {post.zones}</h2>
         </div>
       );
     });
   }
   function submitHandler(event) {
-    //event.preventDefault();
     const payment = event.target.payment.value;
     const date = event.target.date.value;
     const zones = event.target.zones.value;
@@ -42,7 +41,7 @@ export default function Form() {
           <h6 className="form__label">Method of Payment</h6>
           <select name="payment">
             <option value="cash">Cash Fare</option>
-            <option value="stored">Stored Value</option>
+            <option value="stored value">Stored Value</option>
             <option value="monthly">Monthly Pass</option>
           </select>
         </div>

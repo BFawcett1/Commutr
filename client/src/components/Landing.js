@@ -82,16 +82,17 @@ const Login = () => {
               <th className="landing__table-row">$177</th>
               <th className="landing__table-row">$56</th>
             </tr>
+            <p className="landing__paragraph">(Stored value has an additional $6 one-time fee.)</p>
           </div>
         </div>
         <div className="landing__bottom-container">
           <h1 className="landing__header">Decision Tools</h1>
           <p className="landing__paragraph">
             To make your transit pass decisions easier you can access
-            visualizations here that will tell you how much each option will
-            cost depending on how many trips you take per month. If you’re not
-            sure how many trips you take, you can use the trip tracking feature
-            to keep a log of all your trips to help you make informed decisions
+            visualizations in the trip Graphs tab. This feature will tell you how much 
+            each option costs depending on how many trips you take per month. If you’re 
+            not sure how many trips you take, you can hit the trip tracking tab to 
+            keep a log of all your trips to help you make informed decisions
             in the future.
           </p>
         </div>

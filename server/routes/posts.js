@@ -20,22 +20,7 @@ router.post("/", async (req, res) => {
     zones: req.body.zones
   });
   post.save().then(post => res.json(post));
-
-  //   try{
-  //   const savedPost = await post.save();
-  //   res.json(savedPost);
-  //   }catch(err){
-  //       res.json({message: err});
-  //   }
 });
-// router.get('/:postId', async (req, res) => {
-//    try{
-//     const post = await Post.findById(req.params.postId);
-//     res.json(post);
-//     } catch (err){
-//         res.json({ message: err});
-//     }
-// });
 
 router.delete("/:postId", async (req, res) => {
   try {

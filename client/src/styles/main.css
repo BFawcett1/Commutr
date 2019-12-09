@@ -316,17 +316,27 @@ a {
 
 .form__tracking-container {
   margin-top: 32px;
+  width: 90%;
 }
 
 .form__post-container {
   border-top-style: solid;
   border-color: #05386B;
-  width: 90%;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .form__tracking-header {
   font-size: 24px;
   line-height: 32px;
+  font-family: verdana;
+  color: #05386B;
+  margin-bottom: 12px;
+}
+
+.form__post-text {
+  font-size: 13px;
+  line-height: 18px;
   font-family: verdana;
   color: #05386B;
 }
@@ -340,6 +350,11 @@ a {
   .form__tracking-header {
     font-size: 36px;
     line-height: 44px;
+    font-family: verdana;
+  }
+  .form__post-text {
+    font-size: 24px;
+    line-height: 32px;
     font-family: verdana;
   }
 }

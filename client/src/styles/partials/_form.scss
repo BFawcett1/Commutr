@@ -37,14 +37,21 @@
 
   &__tracking-container{
     margin-top: 32px;
+    width: 90%;
   }
   &__post-container{
     border-top-style: solid;
     border-color: $dark-blue;
-    width: 90%;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   &__tracking-header{
     @include header;
+    color: $dark-blue;
+    margin-bottom: 12px;
+  }
+  &__post-text{
+    @include paragraph;
     color: $dark-blue;
   }
 }
@@ -57,5 +64,8 @@
     &__tracking-header{
       @include tab-header;
     }
+     &__post-text{
+     @include header;
+  }
   }
 }
