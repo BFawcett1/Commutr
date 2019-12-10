@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Post = require("../models/Post");
+const Post = require("../config/models/Post");
 
 router.get("/", async (req, res) => {
   try {
@@ -20,6 +20,7 @@ router.post("/", async (req, res) => {
     zones: req.body.zones
   });
   post.save().then(post => res.json(post));
+
 });
 
 router.delete("/:postId", async (req, res) => {
